@@ -3,8 +3,9 @@
 
 # Path to your oh-my-zsh installation.
 export PATH=/opt/homebrew/bin:$PATH
-export ZSH="/Users/kchromik/.oh-my-zsh"
-export DEFAULT_USER="kchromik"
+export PATH=$PATH:/Users/ridvan/dev/flutter/bin
+export ZSH="/Users/ridvan/.oh-my-zsh"
+export DEFAULT_USER="$(whoami)"
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -62,7 +63,5 @@ function up() {
     cd $git_dir
   fi
 }
-export PATH="/usr/local/opt/ruby/bin:/usr/local/lib/ruby/gems/3.0.0/bin:$PATH"
-eval "$(rbenv init - zsh)"
 # Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
 export PATH="$PATH:$HOME/.rvm/bin"
